@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+html {
+    box-sizing: border-box;
+  }
+  
+  *, 
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background: url("fondodesierto.jpg") no-repeat center/cover;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  h1{
+    color:black;
+    font-size: 5rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-weight: 200;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+
+  .image-grid {
+    padding: 10px;
+  }
+  
+  .image-row {
+    display: flex;  
+  }
+  
+  .image-row .image {
+    margin: 10px;
+    height: 240px;  
+  }
+  
+  .image { 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
+                0 6px 20px rgba(0, 0, 0, 0.15),
+                0 6px 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  .image-01 {
+    background-image: url('calabacin.jpeg'); 
+    flex: 1;  
+  }
+  
+  .image-02 {
+    background-image: url('tomates.jpg'); 
+    flex: 1;  
+  }
+  
+  .image-03 {
+    background-image: url('lechuga.jpg');  
+    flex: 2;  
+  }
+  
+  .image-04 {
+    background-image: url('habas.jpg'); 
+    flex: 1;
+  }
+  
+  .image-05 {
+    background-image: url('tomates2.jpg');
+    flex: 2;
+  }
+  
+  .image-06 {
+    background-image: url('pepino.jpg');  
+    flex: 2;
+  }
+  
+  .image-07 {
+    background-image: url('algo.jpg'); 
+    flex: 1;
+  }
+  
+  .image-08 {
+    background-image: url('sandia.jpg');  
+    flex: 3;
+  }
+  
+  .image-09 {
+    background-image: url('guisantes.jpg');  
+    flex: 1;
+  }
+  
+
+  
+  @media screen and (max-width: 400px) {
+    .image-row {
+      flex-direction: column;
+    }
+    
+    .image-row .image {
+      flex-basis: auto;
+    }
+  }
